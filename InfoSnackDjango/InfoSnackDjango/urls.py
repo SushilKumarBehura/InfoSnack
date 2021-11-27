@@ -20,5 +20,5 @@ from .views import FrontendRender
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', FrontendRender, name="frontend_render"), 
-
+    path('', include('SnackIdea.urls')),
 ]
