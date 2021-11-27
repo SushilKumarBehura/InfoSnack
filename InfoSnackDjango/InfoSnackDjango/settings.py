@@ -41,9 +41,10 @@ INSTALLED_APPS = [
 
     ## CUSTOM LIBRARY ADDITION
     'rest_framework',
+    'import_export',
 
     ## CUSTOM APPS
-    # 'SnackIdea.apps.SnackIdeaConfig',
+    'SnackIdea.apps.SnackideaConfig',
 ]
 
 MIDDLEWARE = [
@@ -61,7 +62,10 @@ ROOT_URLCONF = 'InfoSnackDjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates/SnackIdea/frontend-infosnack"],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'), 
+            BASE_DIR / "templates/SnackIdea/frontend-infosnack",
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
