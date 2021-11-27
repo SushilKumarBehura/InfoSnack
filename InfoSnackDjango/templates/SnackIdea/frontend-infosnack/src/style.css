@@ -1,0 +1,13 @@
+*{
+    margin: 0
+} 
+
+canvas{
+    display: block;
+}
+
+.signin{
+    background-color: red;
+    height: 740px;
+    width: 360px;
+}
