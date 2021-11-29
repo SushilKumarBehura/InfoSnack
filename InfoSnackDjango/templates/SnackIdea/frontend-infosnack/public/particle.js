@@ -15,7 +15,6 @@ window.onmousedown = function(e) {
   if(e.button == 0) {
     p.push(new Particle(m.x , m.y));
   }
-  
 }
 
 
