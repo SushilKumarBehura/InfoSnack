@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Particle from "react-tsparticles";
 
 import './App.css';
@@ -17,20 +17,19 @@ import Notification from './components/Notification';
 function App() {
   return (
     <>
-      <Particle params={particlesConfig} className="App-particles__container" />
-      <Home />
-      {/* <Router> */}
-        {/* <Routes>
-          <Route exact path="" component={Home} />
-          <Route exact path="/signin" component={SignIn} />
-          <Route exact path="/signup" component={SignUp} />
-          <Route exact path="/thinkkeywords" component={ThinkKeywords} />
-          <Route exact path="/ShowKeywordsDuringEight" component={ShowKeywordsDuringEight} />
-          <Route exact path="/writeopinion" component={WriteOpinion} />
-          <Route exact path="/ViewAllPost" component={ViewAllPost} />
-          <Route exact path="/notification" component={Notification} />
+      <Router>
+        <Particle params={particlesConfig} className="App-particles__container" />
+        <Routes>
+          <Route path="" element={<Home />} />
+          <Route path="signin" element={<SignIn />} />
+          <Route path="signup" element={<SignUp />} />
+          <Route path="thinkkeywords" element={<ThinkKeywords />} />
+          <Route path="ShowKeywordsDuringEight" element={<ShowKeywordsDuringEight />} />
+          <Route path="writeopinion" element={<WriteOpinion />} />
+          <Route path="ViewAllPost" element={<ViewAllPost />} />
+          <Route path="notification" element={<Notification />} />
         </Routes>
-      </Router> */}
+      </Router>
     </>
   );
 }

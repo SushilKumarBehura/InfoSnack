@@ -75,8 +75,8 @@
                 "mode": "grab"
             },
             "onclick": {
-                "enable": false,
-                "mode": "push"
+                "enable": true,
+                "mode": "repulse"
             },
             "resize": true
         },
@@ -84,7 +84,7 @@
             "grab": {
                 "distance": 100,
                 "line_linked": {
-                    "opacity": 0.3
+                    "opacity": 0.4
                 }
             },
             "bubble": {
