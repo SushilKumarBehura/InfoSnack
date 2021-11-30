@@ -1,23 +1,8 @@
-*{
+/* *{
     margin: 0;
-    /* margin-top: -10px; */
-} 
+}  */
 
 body{
-    background-color: black;
-}
-    
-canvas{
-    display: block;
-    z-index: -1000;
-}
-
-.root{
-    z-index: 1;
-}
-
-.signin{
-    background-color: red;
-    height: 740px;
-    width: 360px;
+     /*  Important for particle js. */
+    background-color: black;    
 }
