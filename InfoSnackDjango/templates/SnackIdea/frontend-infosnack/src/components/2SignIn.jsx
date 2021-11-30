@@ -1,17 +1,28 @@
-import React from 'react'
-
+import React from "react";
 
 const SignIn = () => {
-    return (
-        <div>
-            Hello I am SignUp Page.
-            <form className="signin">
-                <input type="submit" value="User Name" />
-                <input type="submit" value="Password" />
-                <button type="submit">Login</button>
-            </form>
-        </div>
-    )
-}
+  return (
+    <div>
+      <div className="signinform">
+        <form>
+          <h1>Think One Day</h1>
+          <input type="text" placeholder="User Name" />
+          <br />
+          <input type="password" placeholder="Password" />
+          <br />
+          <button type="submit">LOGIN</button>
+          <br />
+          <p>
+            New around here?{" "}
+            <a href="https://infosnack.at/accounts/login">Sign up</a>
+          </p>
+          <text>
+            With ThinkOne we collectively reflect on one question a Day
+          </text>
+        </form>
+      </div>
+    </div>
+  );
+};
 
-export default SignIn
+export default SignIn;
