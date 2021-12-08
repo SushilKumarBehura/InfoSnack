@@ -5,7 +5,7 @@ import './css/authentication.css';
 const ThinkKeywords = () => {
     return (
         <>
-            <p><span>Thoughts</span> to be thought about</p>
+            {/* <p><span>Thoughts</span> to be thought about</p> */}
             <div className="thinkkeywordpage">
             <h1>What is the meaning of life ?</h1>
                 <form>
@@ -19,6 +19,7 @@ const ThinkKeywords = () => {
                     <button type="submit">Start Thinking</button>
                     <br />
                 </form>
+                <p>ThinkOneDay</p>
             </div>
         </>
     )

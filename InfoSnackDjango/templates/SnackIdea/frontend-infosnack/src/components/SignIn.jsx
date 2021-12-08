@@ -15,8 +15,8 @@ const SignIn = () => {
           <button type="submit">LOGIN</button>
           <br />
           <p>
-            New around here?{" "}
-            <a href="https://infosnack.at/accounts/login">Sign up</a>
+            New around here?
+            <a href="https://infosnack.at/accounts/login"> Sign up</a>
           </p>
           <text>
             With ThinkOne we collectively reflect on one question a Day
